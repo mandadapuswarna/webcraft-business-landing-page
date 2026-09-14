@@ -7,7 +7,9 @@ export default function Hero() {
         Modern, responsive digital experiences for startups and growing
         businesses.
       </p>
-      <button>Start a project →</button>
+      <a className="button" href="#work">
+        Start a project →
+      </a>
     </section>
   );
 }

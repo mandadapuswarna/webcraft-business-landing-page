@@ -15,6 +15,9 @@ header {
   align-items: center;
   padding: 22px 7%;
   border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  background: #fff;
 }
 header b {
   font-size: 22px;
@@ -23,11 +26,37 @@ nav {
   display: flex;
   gap: 25px;
 }
+nav a {
+  position: relative;
+  color: #000;
+  padding-bottom: 4px;
+  transition: color 0.2s ease-in;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease-in;
+}
+nav a.active {
+  font-weight: bold;
+}
+nav a.active::after {
+  transform: scaleX(1);
+}
 a {
   text-decoration: none;
   color: inherit;
 }
-button {
+button,
+.button {
+  display: inline-block;
   background: #111827;
   color: #fff;
   border: 0;

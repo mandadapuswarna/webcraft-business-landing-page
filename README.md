@@ -17,6 +17,8 @@ The project currently includes:
 	UI systems.
 - A selected work section for the studio's portfolio message.
 - A contact section with a project inquiry call to action.
+- Anchor navigation for Services, Work, and Contact with smooth scrolling.
+- Header and hero calls to action that scroll to the Contact section.
 - Responsive styles for smaller screens.
 - HTML metadata for the page title, description, language, and theme color.
 
@@ -158,6 +160,15 @@ single column. Section headings also scale down for smaller screens.
 - Kept the existing UI, anchors, labels, and interactions unchanged.
 - Composed the page from the new components in `src/App.jsx`.
 - Added a React `key` prop to each mapped service card.
+- Validation: production build completed successfully with `npx vite build`.
+
+### Phase 2: Navigation and Smooth Scrolling
+
+- Kept the Services, Work, and Contact navigation anchors.
+- Connected the "Let's talk" and "Start a project" calls to action to
+	`#contact` using normal anchor links.
+- Preserved smooth scrolling through the existing global CSS behavior.
+- Added scroll-aware active styling to the Services, Work, and Contact links.
 - Validation: production build completed successfully with `npx vite build`.
 
 ### Future Phases
