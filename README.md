@@ -1,42 +1,44 @@
 # WebCraft Business Landing Page
 
-WebCraft is a responsive business landing page for a digital product studio. It
-introduces the studio, presents its core services, highlights its work, and
-provides a contact call to action.
+WebCraft is a responsive business landing page for a digital product studio. It introduces the studio, presents its core services, highlights selected work, explains business benefits, shares fictional client testimonials, and provides a contact form for project inquiries.
 
-This README is the single project document. Update the relevant sections as
-each development phase adds or changes functionality.
+The project is built as a React portfolio project to demonstrate component organization, reusable data-driven UI, controlled forms, validation, responsive design, accessibility improvements, and production deployment.
+
+## Live Demo
+
+🔗 **[View WebCraft Live Demo](https://webcraft-business-landing-page.netlify.app/)**
 
 ## Current Status
 
 The project currently includes:
 
-- A WebCraft brand header with responsive navigation links.
-- A hero section describing the studio and its primary call to action.
-- A six-card services section covering design, development, optimization, and
-	accessibility.
-- A data-driven portfolio section with FinEdge, LocalBite, and FitTrack project
-	cards.
-- A "Why Work With Us" section with four data-driven business benefits.
-- A testimonials section with three fictional client quotes.
-- A contact section with a project inquiry call to action.
-- Contact form validation, simulated submission feedback, and form reset.
-- Anchor navigation for Services, Work, and Contact with smooth scrolling.
-- Header and hero calls to action that scroll to the Contact section.
-- Responsive mobile navigation with open, close, and link-selection behavior.
-- Responsive layouts for mobile, tablet, and desktop viewport sizes.
-- Scroll-to-top control with accessible button feedback and focus states.
-- Responsive styles for smaller screens.
-- SEO metadata for the page title, description, robots, theme color, and social
-	sharing previews.
+* A WebCraft brand header with responsive navigation links.
+* A hero section describing the studio and its primary call to action.
+* A six-card services section covering design, development, optimization, and accessibility.
+* A data-driven portfolio section with FinEdge, LocalBite, and FitTrack project cards.
+* A "Why Work With Us" section with four data-driven business benefits.
+* A testimonials section with three fictional client quotes.
+* A controlled contact form with validation and submission feedback.
+* Contact form validation, simulated submission feedback, and form reset.
+* Anchor navigation for Services, Work, and Contact with smooth scrolling.
+* Header and hero calls to action that scroll to the Contact section.
+* Scroll-aware active navigation links.
+* Responsive mobile navigation with open, close, and link-selection behavior.
+* Responsive layouts for mobile, tablet, and desktop viewport sizes.
+* A scroll-to-top control with accessible button feedback and focus states.
+* Hover, active, and focus-visible states for interactive elements.
+* SEO metadata for the page title, description, robots, theme color, and social sharing previews.
+* A successful production build using Vite.
+* Public deployment on Netlify.
 
 ## Technology
 
-- React
-- Vite
-- JSX
-- CSS
-- npm
+* React
+* Vite
+* JavaScript
+* JSX
+* CSS
+* npm
 
 ## Project Structure
 
@@ -46,25 +48,25 @@ The project currently includes:
 ├── package.json        # Dependencies and npm scripts
 ├── README.md           # Complete project documentation
 └── src/
-		├── components/      # Reusable page-section components
-		│   ├── Header/
-		│   ├── Hero/
-		│   ├── Services/
-		│   ├── Work/
-		│   ├── Benefits/
-		│   ├── Testimonials/
-		│   ├── Contact/
-		│   ├── ScrollToTop/
-		│   └── Footer/
-		├── App.jsx         # Root component that composes the page
-		├── main.jsx        # React application entry point
-		└── styles.css      # Layout, typography, colors, and responsive rules
+    ├── components/     # Reusable page-section components
+    │   ├── Header/
+    │   ├── Hero/
+    │   ├── Services/
+    │   ├── Work/
+    │   ├── Benefits/
+    │   ├── Testimonials/
+    │   ├── Contact/
+    │   ├── ScrollToTop/
+    │   └── Footer/
+    ├── App.jsx         # Root component that composes the page
+    ├── main.jsx        # React application entry point
+    └── styles.css      # Layout, typography, colors, and responsive rules
 ```
 
 ## Requirements
 
-- Node.js 24 or newer
-- npm
+* Node.js 24 or newer
+* npm
 
 ## Installation
 
@@ -82,8 +84,11 @@ Start the Vite development server:
 npm run dev
 ```
 
-Vite will print the local URL in the terminal, normally
-`http://localhost:5173/`.
+Vite will print the local URL in the terminal, normally:
+
+```text
+http://localhost:5173/
+```
 
 ## Production Build
 
@@ -101,33 +106,29 @@ npm run preview
 
 ## Available Scripts
 
-| Command | Purpose |
-| --- | --- |
-| `npm run dev` | Start the local development server. |
-| `npm run build` | Build the application for production. |
-| `npm run preview` | Serve the production build locally. |
-
-## Live Demo
-
-The project is ready for deployment. A live demo URL will be added here after
-the Netlify deployment phase.
+| Command           | Purpose                               |
+| ----------------- | ------------------------------------- |
+| `npm run dev`     | Start the local development server.   |
+| `npm run build`   | Build the application for production. |
+| `npm run preview` | Serve the production build locally.   |
 
 ## Page Sections
 
 ### Header
 
-The header displays the WebCraft brand, links to the Services, Work, and
-Contact sections, and includes a "Let's talk" action.
+The header displays the WebCraft brand, links to the Services, Work, and Contact sections, and includes a "Let's talk" action.
+
+The navigation supports responsive behavior and includes a mobile menu for smaller screens.
 
 ### Hero
 
-The hero establishes WebCraft as a digital product studio and introduces the
-primary project-starting call to action.
+The hero establishes WebCraft as a digital product studio and introduces the primary project-starting call to action.
+
+The main call-to-action button navigates to the Contact section.
 
 ### Services
 
-The services section presents six data-driven offerings. Each card includes a
-service number, title, description, and hover interaction:
+The services section presents six data-driven offerings. Each card includes a service number, title, description, and hover interaction:
 
 1. Web Design
 2. Frontend Development
@@ -138,9 +139,7 @@ service number, title, description, and hover interaction:
 
 ### Selected Work
 
-The work section presents three fictional portfolio projects. Each card includes
-the project name, category, short description, CSS placeholder visual, and a
-hover interaction:
+The work section presents three fictional portfolio projects. Each card includes the project name, category, short description, CSS placeholder visual, and hover interaction:
 
 1. FinEdge — Finance Platform
 2. LocalBite — Food Discovery
@@ -148,7 +147,7 @@ hover interaction:
 
 ### Why Work With Us
 
-The About section at `#about` presents four reusable benefits:
+The benefits section presents four reusable business benefits:
 
 1. User-focused design
 2. Responsive development
@@ -157,209 +156,151 @@ The About section at `#about` presents four reusable benefits:
 
 ### Testimonials
 
-The testimonials section presents three fictional client notes with a quote,
-person name, role, and company:
+The testimonials section presents three fictional client notes with a quote, person name, role, and company:
 
 1. Alex Morgan — Product Lead, Northstar Labs
 2. Priya Shah — Founder, LocalBite
 3. Jordan Lee — Operations Director, FitTrack
 
+The testimonials are fictional and are included for demonstration purposes as part of the portfolio project.
+
 ### Contact
 
-The contact section closes the page with a controlled React form containing:
+The contact section contains a controlled React form with:
 
-- Name
-- Email
-- Company (optional)
-- Project type
-- Message
+* Name
+* Email
+* Company (optional)
+* Project type
+* Message
 
-The form validates required name, email, and message fields, checks email
-format, displays inline validation messages, disables submission while sending,
-simulates a short submission delay, and resets after a successful submission.
+The form validates required name, email, and message fields and checks the email format.
+
+The form also:
+
+* Displays inline validation messages.
+* Provides accessible validation feedback.
+* Disables submission while sending.
+* Displays `Sending...` during the simulated submission process.
+* Simulates a short submission delay.
+* Displays a success message after submission.
+* Resets the form after successful submission.
+
+## Navigation and User Experience
+
+The application includes several interaction improvements:
+
+* Smooth scrolling between page sections.
+* Header navigation links for Services, Work, and Contact.
+* Scroll-aware active navigation styling.
+* Header and hero calls to action that navigate to the Contact section.
+* Responsive mobile navigation.
+* Mobile menu open and close behavior.
+* Automatic mobile menu closing after navigation.
+* Scroll-to-top functionality.
+* Hover states for interactive elements.
+* Active states for buttons and links.
+* Visible keyboard focus states.
+
+## Accessibility
+
+The project includes accessibility-focused improvements such as:
+
+* Semantic HTML elements.
+* Accessible mobile navigation controls.
+* `aria-label` attributes for interactive controls.
+* `aria-expanded` state for the mobile navigation menu.
+* Accessible form validation feedback.
+* `aria-invalid` for invalid form fields.
+* `aria-describedby` connections between fields and error messages.
+* Visible `:focus-visible` styles.
+* Semantic `<blockquote>` elements for testimonials.
+
+## SEO and Metadata
+
+The `index.html` document includes metadata for:
+
+* Page title.
+* Page description.
+* Document language.
+* Robots indexing instructions.
+* Theme color.
+* Open Graph social sharing metadata.
+* Twitter card metadata.
 
 ## Deployment
 
-The production build can be deployed to Netlify using:
+The project is deployed publicly on Netlify.
 
-- Build command: `npm run build`
-- Publish directory: `dist`
+### Live Application
 
-Deployment-specific details should be added to the Live Demo section after
-deployment.
+🔗 **https://webcraft-business-landing-page.netlify.app/**
+
+### Netlify Build Configuration
+
+The production deployment uses:
+
+* **Build command:** `npm run build`
+* **Publish directory:** `dist`
+
+The application was successfully built before deployment using:
+
+```bash
+npm run build
+```
 
 ## Responsive Behavior
 
-The layout uses responsive CSS grids across the requested viewport sizes:
+The layout uses responsive CSS across the requested viewport sizes.
 
-- Mobile at 375px: single-column cards, compact spacing, usable stacked form,
-	and toggle-based navigation.
-- Tablet at 768px: two-column service, portfolio, and testimonial grids with
-	balanced section spacing.
-- Desktop at 1440px: multi-column layouts with a 1600px content-width cap.
+### Mobile — 375px
 
-Section headings and form fields scale down and stack where needed on smaller
-screens.
+* Single-column card layouts.
+* Compact spacing.
+* Usable stacked contact form.
+* Toggle-based mobile navigation.
+* Responsive typography and controls.
+
+### Tablet — 768px
+
+* Two-column layouts where appropriate.
+* Balanced section spacing.
+* Responsive service, portfolio, and testimonial grids.
+
+### Desktop — 1440px
+
+* Multi-column layouts.
+* Wider content areas.
+* Capped content widths.
+* Comfortable spacing and typography.
+
+Section headings and form fields scale and stack where needed on smaller screens.
 
 ## Development Guidelines
 
-- Keep page-section markup in its matching folder under `src/components/`.
-- Keep `src/App.jsx` focused on composing the page components.
-- Keep visual styles in `src/styles.css`.
-- Keep document-level metadata and the React mount in `index.html`.
-- Preserve the existing WebCraft brand unless a phase explicitly changes it.
-- Run `npm run build` after each phase to verify that the application compiles.
-- Update this README whenever a phase changes the project's features, setup,
-	structure, or behavior.
+* Keep page-section markup in its matching folder under `src/components/`.
+* Keep `src/App.jsx` focused on composing page components.
+* Keep visual styles in `src/styles.css`.
+* Keep document-level metadata in `index.html`.
+* Preserve the existing WebCraft project branding unless intentionally changing the project.
+* Run `npm run build` before production deployment.
+* Test responsive behavior at mobile, tablet, and desktop viewport sizes.
+* Update this README whenever significant project features, structure, setup, or behavior changes.
 
-## Phase Log
+## Future Improvements
 
-### Phase 1: Initial Landing Page
+Possible future enhancements include:
 
-- Created the WebCraft business landing page with React and Vite.
-- Added the header, hero, services, selected work, contact, and footer areas.
-- Added responsive styling for mobile layouts.
-- Added HTML5 document metadata and the WebCraft page title.
-- Added the initial project setup and build commands.
+* Backend integration for real contact form submissions.
+* Email service integration.
+* Real portfolio project content.
+* Image optimization.
+* Additional animations.
+* Dark and light theme support.
+* Analytics integration.
+* Expanded SEO metadata.
+* Automated testing.
 
-### Phase 1: Component Organization
+## Project Purpose
 
-- Split the header, hero, services, work, contact, and footer into reusable
-	components under `src/components/`.
-- Kept the existing UI, anchors, labels, and interactions unchanged.
-- Composed the page from the new components in `src/App.jsx`.
-- Added a React `key` prop to each mapped service card.
-- Validation: production build completed successfully with `npx vite build`.
-
-### Phase 2: Navigation and Smooth Scrolling
-
-- Kept the Services, Work, and Contact navigation anchors.
-- Connected the "Let's talk" and "Start a project" calls to action to
-	`#contact` using normal anchor links.
-- Preserved smooth scrolling through the existing global CSS behavior.
-- Added scroll-aware active styling to the Services, Work, and Contact links.
-- Validation: production build completed successfully with `npx vite build`.
-
-### Phase 3: Expanded Services
-
-- Replaced tuple-based service data with objects containing `title` and
-	`description` properties.
-- Expanded the services section from three cards to six.
-- Added numbered service labels and a subtle hover lift, border, and shadow
-	animation.
-- Validation: production build completed successfully with `npx vite build`.
-
-### Phase 4: Portfolio Work Showcase
-
-- Replaced the selected work placeholder with three data-driven project cards.
-- Added project names, categories, descriptions, and CSS design placeholders.
-- Added hover lift, border, shadow, and visual scale interactions.
-- Added a single-column project layout for smaller screens.
-- Validation: production build completed successfully with `npx vite build`.
-
-### Phase 5: Business Benefits
-
-- Added a reusable Benefits component with four data-driven feature items.
-- Added the "Why Work With Us" section with the message "Small team. Big
-	attention to detail."
-- Added responsive two-column and single-column layouts with subtle hover
-	interactions.
-- Validation: production build completed successfully with `npx vite build`.
-
-### Phase 6: Client Testimonials
-
-- Added a reusable Testimonials component with three data-driven testimonial
-	cards.
-- Added fictional quotes with person names, roles, and companies.
-- Added responsive testimonial cards with subtle hover interactions.
-- Validation: production build completed successfully with `npx vite build`.
-
-### Phase 7: Contact Form
-
-- Replaced the email call to action with a controlled React contact form.
-- Added name, email, optional company, project type, and message fields.
-- Added required-field and email-format validation with accessible error
-	messages.
-- Added a success message and cleared the form after valid submission.
-- Validation: production build completed successfully with `npx vite build`.
-
-### Phase 8: Form UX and Feedback
-
-- Added submitting state with an 800 ms simulated submission delay.
-- Disabled the submit button while the form is submitting and displayed
-	`Sending...` feedback.
-- Added `✓ Message sent successfully!` confirmation after submission.
-- Preserved inline validation feedback from Phase 7.
-- Validation: production build completed successfully with `npx vite build`.
-
-### Phase 9: Mobile Navigation
-
-- Added an accessible mobile menu toggle with open and close states.
-- Added mobile navigation links for Services, Work, and Contact.
-- Closed the menu after selecting a navigation link or the Contact CTA.
-- Preserved the existing desktop navigation layout.
-- Validation: production build completed successfully with `npx vite build`.
-
-### Phase 10: Responsive Layout
-
-- Added tablet two-column grid behavior for services, portfolio, and
-	testimonials between 701px and 1024px.
-- Preserved single-column layouts and mobile navigation at 700px and below.
-- Added capped content widths and viewport-safe spacing at desktop, tablet, and
-	mobile sizes.
-- Validation: production build completed successfully with `npx vite build` and
-	viewport checks at 375px, 768px, and 1440px.
-
-### Phase 11: UX and Accessibility Improvements
-
-- Added a scroll-to-top button that appears after the page is scrolled.
-- Added hover, focus-visible, and active states for buttons and links.
-- Added section scroll offsets for the sticky header and smooth transitions.
-- Added accessible labels and visible keyboard focus treatment.
-- Validation: production build completed successfully with `npx vite build`.
-
-### Phase 12: SEO and Metadata
-
-- Added robots indexing metadata and a dark theme color matching the brand UI.
-- Added Open Graph metadata for website previews.
-- Added Twitter card metadata for social sharing previews.
-- Preserved the WebCraft title, description, and document language metadata.
-- Validation: production build completed successfully with `npx vite build`.
-
-### Phase 13: Code Cleanup and UI Polish
-
-- Corrected the hero project CTA to navigate to the Contact section.
-- Confirmed mapped service, project, benefit, and testimonial items use React
-	keys.
-- Confirmed the development, production build, and preview scripts are
-	configured for their intended commands.
-- Validation: `npm run dev`, `npm run build`, and browser console checks passed.
-
-### Phase 14: README Documentation
-
-- Expanded the project overview to include all implemented page features.
-- Documented the current component structure, setup, scripts, and responsive
-	behavior.
-- Added Live Demo and Netlify deployment sections for the deployment phase.
-- Validation: documentation matches the current source structure and
-	`npm run build` succeeds.
-
-### Phase 15: Production Build Verification
-
-- Ran the official `npm run build` command successfully.
-- Confirmed the `dist/` output contains the generated HTML document and bundled
-  CSS and JavaScript assets.
-- No critical build or editor errors were reported.
-
-### Future Phases
-
-Add each new phase below using this format:
-
-```markdown
-### Phase N: Phase Name
-
-- What was added or changed.
-- New user-facing behavior.
-- New dependencies, files, or setup steps.
-- Validation performed.
-```
+WebCraft is a frontend portfolio project created to demonstrate practical React development skills, including reusable components, data-driven rendering, state management, controlled forms, validation, responsive layouts, accessibility considerations, user interface interactions, SEO metadata, and production deployment.
