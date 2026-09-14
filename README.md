@@ -22,6 +22,7 @@ The project currently includes:
 - Header and hero calls to action that scroll to the Contact section.
 - Responsive mobile navigation with open, close, and link-selection behavior.
 - Responsive layouts for mobile, tablet, and desktop viewport sizes.
+- Scroll-to-top control with accessible button feedback and focus states.
 - Responsive styles for smaller screens.
 - HTML metadata for the page title, description, language, and theme color.
 
@@ -49,6 +50,7 @@ The project currently includes:
 		│   ├── Benefits/
 		│   ├── Testimonials/
 		│   ├── Contact/
+		│   ├── ScrollToTop/
 		│   └── Footer/
 		├── App.jsx         # Root component that composes the page
 		├── main.jsx        # React application entry point
@@ -288,6 +290,14 @@ screens.
 	mobile sizes.
 - Validation: production build completed successfully with `npx vite build` and
 	viewport checks at 375px, 768px, and 1440px.
+
+### Phase 11: UX and Accessibility Improvements
+
+- Added a scroll-to-top button that appears after the page is scrolled.
+- Added hover, focus-visible, and active states for buttons and links.
+- Added section scroll offsets for the sticky header and smooth transitions.
+- Added accessible labels and visible keyboard focus treatment.
+- Validation: production build completed successfully with `npx vite build`.
 
 ### Future Phases
 

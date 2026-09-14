@@ -7,6 +7,7 @@ import Benefits from "./components/Benefits/Benefits";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
