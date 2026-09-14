@@ -13,8 +13,8 @@ The project currently includes:
 
 - A WebCraft brand header with responsive navigation links.
 - A hero section describing the studio and its primary call to action.
-- A three-card services section covering web design, frontend development, and
-	UI systems.
+- A six-card services section covering design, development, optimization, and
+	accessibility.
 - A selected work section for the studio's portfolio message.
 - A contact section with a project inquiry call to action.
 - Anchor navigation for Services, Work, and Contact with smooth scrolling.
@@ -110,11 +110,15 @@ primary project-starting call to action.
 
 ### Services
 
-The services section presents three offerings:
+The services section presents six data-driven offerings. Each card includes a
+service number, title, description, and hover interaction:
 
 1. Web Design
 2. Frontend Development
 3. UI Systems
+4. Responsive Design
+5. Website Optimization
+6. Accessibility
 
 ### Selected Work
 
@@ -169,6 +173,15 @@ single column. Section headings also scale down for smaller screens.
 	`#contact` using normal anchor links.
 - Preserved smooth scrolling through the existing global CSS behavior.
 - Added scroll-aware active styling to the Services, Work, and Contact links.
+- Validation: production build completed successfully with `npx vite build`.
+
+### Phase 3: Expanded Services
+
+- Replaced tuple-based service data with objects containing `title` and
+	`description` properties.
+- Expanded the services section from three cards to six.
+- Added numbered service labels and a subtle hover lift, border, and shadow
+	animation.
 - Validation: production build completed successfully with `npx vite build`.
 
 ### Future Phases
