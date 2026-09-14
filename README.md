@@ -308,6 +308,15 @@ screens.
 - Preserved the WebCraft title, description, and document language metadata.
 - Validation: production build completed successfully with `npx vite build`.
 
+### Phase 13: Code Cleanup and UI Polish
+
+- Corrected the hero project CTA to navigate to the Contact section.
+- Confirmed mapped service, project, benefit, and testimonial items use React
+	keys.
+- Confirmed the development, production build, and preview scripts are
+	configured for their intended commands.
+- Validation: `npm run dev`, `npm run build`, and browser console checks passed.
+
 ### Future Phases
 
 Add each new phase below using this format:
