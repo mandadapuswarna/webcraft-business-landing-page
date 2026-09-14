@@ -24,7 +24,8 @@ The project currently includes:
 - Responsive layouts for mobile, tablet, and desktop viewport sizes.
 - Scroll-to-top control with accessible button feedback and focus states.
 - Responsive styles for smaller screens.
-- HTML metadata for the page title, description, language, and theme color.
+- SEO metadata for the page title, description, robots, theme color, and social
+	sharing previews.
 
 ## Technology
 
@@ -297,6 +298,14 @@ screens.
 - Added hover, focus-visible, and active states for buttons and links.
 - Added section scroll offsets for the sticky header and smooth transitions.
 - Added accessible labels and visible keyboard focus treatment.
+- Validation: production build completed successfully with `npx vite build`.
+
+### Phase 12: SEO and Metadata
+
+- Added robots indexing metadata and a dark theme color matching the brand UI.
+- Added Open Graph metadata for website previews.
+- Added Twitter card metadata for social sharing previews.
+- Preserved the WebCraft title, description, and document language metadata.
 - Validation: production build completed successfully with `npx vite build`.
 
 ### Future Phases
