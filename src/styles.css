@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #101828;
+  overflow-x: hidden;
 }
 header {
   display: flex;
@@ -19,6 +20,8 @@ header {
   top: 0;
   background: #fff;
   z-index: 10;
+  width: min(100%, 1600px);
+  margin: 0 auto;
 }
 header b {
   font-size: 22px;
@@ -91,6 +94,8 @@ button,
 }
 section:not(.hero) {
   padding: 75px 7%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 section h2 {
   font-size: 42px;
@@ -383,6 +388,21 @@ footer {
   padding: 25px 7%;
   border-top: 1px solid #eee;
   color: #667085;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+@media (min-width: 701px) and (max-width: 1024px) {
+  .cards,
+  .project-grid,
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero {
+    padding: 90px 6%;
+  }
+  section:not(.hero) {
+    padding: 65px 6%;
+  }
 }
 @media (max-width: 700px) {
   header {
@@ -441,6 +461,18 @@ footer {
   }
   .form-fields {
     grid-template-columns: 1fr;
+  }
+  header {
+    padding: 16px 5%;
+  }
+  .hero {
+    padding: 76px 5% 82px;
+  }
+  section:not(.hero) {
+    padding: 58px 5%;
+  }
+  footer {
+    padding: 22px 5%;
   }
   section h2 {
     font-size: 32px;

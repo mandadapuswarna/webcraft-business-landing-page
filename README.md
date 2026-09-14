@@ -21,6 +21,7 @@ The project currently includes:
 - Anchor navigation for Services, Work, and Contact with smooth scrolling.
 - Header and hero calls to action that scroll to the Contact section.
 - Responsive mobile navigation with open, close, and link-selection behavior.
+- Responsive layouts for mobile, tablet, and desktop viewport sizes.
 - Responsive styles for smaller screens.
 - HTML metadata for the page title, description, language, and theme color.
 
@@ -168,9 +169,16 @@ simulates a short submission delay, and resets after a successful submission.
 
 ## Responsive Behavior
 
-The layout uses a desktop-first CSS grid for the service cards. At viewport
-widths below 700px, the navigation is hidden and the service cards stack into a
-single column. Section headings also scale down for smaller screens.
+The layout uses responsive CSS grids across the requested viewport sizes:
+
+- Mobile at 375px: single-column cards, compact spacing, usable stacked form,
+	and toggle-based navigation.
+- Tablet at 768px: two-column service, portfolio, and testimonial grids with
+	balanced section spacing.
+- Desktop at 1440px: multi-column layouts with a 1600px content-width cap.
+
+Section headings and form fields scale down and stack where needed on smaller
+screens.
 
 ## Development Guidelines
 
@@ -270,6 +278,16 @@ single column. Section headings also scale down for smaller screens.
 - Closed the menu after selecting a navigation link or the Contact CTA.
 - Preserved the existing desktop navigation layout.
 - Validation: production build completed successfully with `npx vite build`.
+
+### Phase 10: Responsive Layout
+
+- Added tablet two-column grid behavior for services, portfolio, and
+	testimonials between 701px and 1024px.
+- Preserved single-column layouts and mobile navigation at 700px and below.
+- Added capped content widths and viewport-safe spacing at desktop, tablet, and
+	mobile sizes.
+- Validation: production build completed successfully with `npx vite build` and
+	viewport checks at 375px, 768px, and 1440px.
 
 ### Future Phases
 
