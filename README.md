@@ -162,7 +162,8 @@ The contact section closes the page with a controlled React form containing:
 - Message
 
 The form validates required name, email, and message fields, checks email
-format, displays validation messages, and resets after a successful submission.
+format, displays inline validation messages, disables submission while sending,
+simulates a short submission delay, and resets after a successful submission.
 
 ## Responsive Behavior
 
@@ -250,6 +251,15 @@ single column. Section headings also scale down for smaller screens.
 - Added required-field and email-format validation with accessible error
 	messages.
 - Added a success message and cleared the form after valid submission.
+- Validation: production build completed successfully with `npx vite build`.
+
+### Phase 8: Form UX and Feedback
+
+- Added submitting state with an 800 ms simulated submission delay.
+- Disabled the submit button while the form is submitting and displayed
+	`Sending...` feedback.
+- Added `✓ Message sent successfully!` confirmation after submission.
+- Preserved inline validation feedback from Phase 7.
 - Validation: production build completed successfully with `npx vite build`.
 
 ### Future Phases

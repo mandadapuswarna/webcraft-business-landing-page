@@ -42,6 +42,7 @@ function ContactForm() {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -61,9 +62,14 @@ function ContactForm() {
       return;
     }
 
-    setForm(initialForm);
-    setErrors({});
-    setSubmitted(true);
+    setIsSubmitting(true);
+
+    window.setTimeout(() => {
+      setForm(initialForm);
+      setErrors({});
+      setIsSubmitting(false);
+      setSubmitted(true);
+    }, 800);
   }
 
   return (
@@ -124,10 +130,12 @@ function ContactForm() {
         />
         {errors.message && <span id="message-error">{errors.message}</span>}
       </label>
-      <button type="submit">Send message</button>
+      <button type="submit" disabled={isSubmitting}>
+        {isSubmitting ? "Sending..." : "Send message"}
+      </button>
       {submitted && (
         <p className="form-success" role="status">
-          Thanks! Your message has been received.
+          ✓ Message sent successfully!
         </p>
       )}
     </form>
