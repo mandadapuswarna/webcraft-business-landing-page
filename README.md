@@ -15,7 +15,8 @@ The project currently includes:
 - A hero section describing the studio and its primary call to action.
 - A six-card services section covering design, development, optimization, and
 	accessibility.
-- A selected work section for the studio's portfolio message.
+- A data-driven portfolio section with FinEdge, LocalBite, and FitTrack project
+	cards.
 - A contact section with a project inquiry call to action.
 - Anchor navigation for Services, Work, and Contact with smooth scrolling.
 - Header and hero calls to action that scroll to the Contact section.
@@ -122,8 +123,13 @@ service number, title, description, and hover interaction:
 
 ### Selected Work
 
-The work section provides a dedicated area for the studio's portfolio message
-and can be expanded with real project examples in a later phase.
+The work section presents three fictional portfolio projects. Each card includes
+the project name, category, short description, CSS placeholder visual, and a
+hover interaction:
+
+1. FinEdge — Finance Platform
+2. LocalBite — Food Discovery
+3. FitTrack — Wellness Product
 
 ### Contact
 
@@ -182,6 +188,14 @@ single column. Section headings also scale down for smaller screens.
 - Expanded the services section from three cards to six.
 - Added numbered service labels and a subtle hover lift, border, and shadow
 	animation.
+- Validation: production build completed successfully with `npx vite build`.
+
+### Phase 4: Portfolio Work Showcase
+
+- Replaced the selected work placeholder with three data-driven project cards.
+- Added project names, categories, descriptions, and CSS design placeholders.
+- Added hover lift, border, shadow, and visual scale interactions.
+- Added a single-column project layout for smaller screens.
 - Validation: production build completed successfully with `npx vite build`.
 
 ### Future Phases
