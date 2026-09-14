@@ -20,6 +20,7 @@ The project currently includes:
 - A contact section with a project inquiry call to action.
 - Anchor navigation for Services, Work, and Contact with smooth scrolling.
 - Header and hero calls to action that scroll to the Contact section.
+- Responsive mobile navigation with open, close, and link-selection behavior.
 - Responsive styles for smaller screens.
 - HTML metadata for the page title, description, language, and theme color.
 
@@ -260,6 +261,14 @@ single column. Section headings also scale down for smaller screens.
 	`Sending...` feedback.
 - Added `✓ Message sent successfully!` confirmation after submission.
 - Preserved inline validation feedback from Phase 7.
+- Validation: production build completed successfully with `npx vite build`.
+
+### Phase 9: Mobile Navigation
+
+- Added an accessible mobile menu toggle with open and close states.
+- Added mobile navigation links for Services, Work, and Contact.
+- Closed the menu after selecting a navigation link or the Contact CTA.
+- Preserved the existing desktop navigation layout.
 - Validation: production build completed successfully with `npx vite build`.
 
 ### Future Phases

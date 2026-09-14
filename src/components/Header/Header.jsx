@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const sections = ["services", "work", "contact"]
@@ -39,21 +40,46 @@ export default function Header() {
     return () => observer.disconnect();
   }, []);
 
+  function closeMenu() {
+    setMenuOpen(false);
+  }
+
   return (
     <header>
       <b>WebCraft</b>
-      <nav>
-        <a className={activeSection === "services" ? "active" : ""} href="#services">
+      <button
+        className="menu-toggle"
+        type="button"
+        aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={menuOpen}
+        onClick={() => setMenuOpen((isOpen) => !isOpen)}
+      >
+        {menuOpen ? "×" : "☰"}
+      </button>
+      <nav className={menuOpen ? "open" : ""}>
+        <a
+          className={activeSection === "services" ? "active" : ""}
+          href="#services"
+          onClick={closeMenu}
+        >
           Services
         </a>
-        <a className={activeSection === "work" ? "active" : ""} href="#work">
+        <a
+          className={activeSection === "work" ? "active" : ""}
+          href="#work"
+          onClick={closeMenu}
+        >
           Work
         </a>
-        <a className={activeSection === "contact" ? "active" : ""} href="#contact">
+        <a
+          className={activeSection === "contact" ? "active" : ""}
+          href="#contact"
+          onClick={closeMenu}
+        >
           Contact
         </a>
       </nav>
-      <a className="button" href="#contact">
+      <a className="button desktop-cta" href="#contact" onClick={closeMenu}>
         Let's talk
       </a>
     </header>
