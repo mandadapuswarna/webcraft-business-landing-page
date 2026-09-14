@@ -153,8 +153,16 @@ person name, role, and company:
 
 ### Contact
 
-The contact section closes the page with an inquiry message and an email call
-to action.
+The contact section closes the page with a controlled React form containing:
+
+- Name
+- Email
+- Company (optional)
+- Project type
+- Message
+
+The form validates required name, email, and message fields, checks email
+format, displays validation messages, and resets after a successful submission.
 
 ## Responsive Behavior
 
@@ -233,6 +241,15 @@ single column. Section headings also scale down for smaller screens.
 	cards.
 - Added fictional quotes with person names, roles, and companies.
 - Added responsive testimonial cards with subtle hover interactions.
+- Validation: production build completed successfully with `npx vite build`.
+
+### Phase 7: Contact Form
+
+- Replaced the email call to action with a controlled React contact form.
+- Added name, email, optional company, project type, and message fields.
+- Added required-field and email-format validation with accessible error
+	messages.
+- Added a success message and cleared the form after valid submission.
 - Validation: production build completed successfully with `npx vite build`.
 
 ### Future Phases
