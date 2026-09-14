@@ -250,6 +250,52 @@ section h2 {
   color: #667085;
   line-height: 1.6;
 }
+.testimonials {
+  background: #f3f4f6;
+}
+.testimonials h2 {
+  max-width: 720px;
+  margin-bottom: 42px;
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 255px;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  transition: transform 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  border-color: #111827;
+  box-shadow: 0 12px 24px rgba(16, 24, 40, 0.1);
+}
+.testimonial-card blockquote {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.45;
+}
+.testimonial-card footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0;
+  border: 0;
+  color: #101828;
+}
+.testimonial-card footer span {
+  color: #667085;
+  font-size: 14px;
+}
 .contact {
   text-align: center;
   padding: 100px 7% !important;
@@ -278,6 +324,9 @@ footer {
     gap: 35px;
   }
   .benefit-list {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-grid {
     grid-template-columns: 1fr;
   }
   section h2 {

@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 import Work from "./components/Work/Work";
 import Benefits from "./components/Benefits/Benefits";
+import Testimonials from "./components/Testimonials/Testimonials";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
@@ -16,6 +17,7 @@ export default function App() {
         <Services />
         <Work />
         <Benefits />
+        <Testimonials />
         <Contact />
       </main>
       <Footer />

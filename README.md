@@ -45,6 +45,7 @@ The project currently includes:
 		│   ├── Services/
 		│   ├── Work/
 		│   ├── Benefits/
+		│   ├── Testimonials/
 		│   ├── Contact/
 		│   └── Footer/
 		├── App.jsx         # Root component that composes the page
@@ -141,6 +142,15 @@ The About section at `#about` presents four reusable benefits:
 3. Clean reusable code
 4. Clear communication
 
+### Testimonials
+
+The testimonials section presents three fictional client notes with a quote,
+person name, role, and company:
+
+1. Alex Morgan — Product Lead, Northstar Labs
+2. Priya Shah — Founder, LocalBite
+3. Jordan Lee — Operations Director, FitTrack
+
 ### Contact
 
 The contact section closes the page with an inquiry message and an email call
@@ -215,6 +225,14 @@ single column. Section headings also scale down for smaller screens.
 	attention to detail."
 - Added responsive two-column and single-column layouts with subtle hover
 	interactions.
+- Validation: production build completed successfully with `npx vite build`.
+
+### Phase 6: Client Testimonials
+
+- Added a reusable Testimonials component with three data-driven testimonial
+	cards.
+- Added fictional quotes with person names, roles, and companies.
+- Added responsive testimonial cards with subtle hover interactions.
 - Validation: production build completed successfully with `npx vite build`.
 
 ### Future Phases
