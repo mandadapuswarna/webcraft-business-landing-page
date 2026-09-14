@@ -17,7 +17,10 @@ The project currently includes:
 	accessibility.
 - A data-driven portfolio section with FinEdge, LocalBite, and FitTrack project
 	cards.
+- A "Why Work With Us" section with four data-driven business benefits.
+- A testimonials section with three fictional client quotes.
 - A contact section with a project inquiry call to action.
+- Contact form validation, simulated submission feedback, and form reset.
 - Anchor navigation for Services, Work, and Contact with smooth scrolling.
 - Header and hero calls to action that scroll to the Contact section.
 - Responsive mobile navigation with open, close, and link-selection behavior.
@@ -104,6 +107,11 @@ npm run preview
 | `npm run build` | Build the application for production. |
 | `npm run preview` | Serve the production build locally. |
 
+## Live Demo
+
+The project is ready for deployment. A live demo URL will be added here after
+the Netlify deployment phase.
+
 ## Page Sections
 
 ### Header
@@ -169,6 +177,16 @@ The contact section closes the page with a controlled React form containing:
 The form validates required name, email, and message fields, checks email
 format, displays inline validation messages, disables submission while sending,
 simulates a short submission delay, and resets after a successful submission.
+
+## Deployment
+
+The production build can be deployed to Netlify using:
+
+- Build command: `npm run build`
+- Publish directory: `dist`
+
+Deployment-specific details should be added to the Live Demo section after
+deployment.
 
 ## Responsive Behavior
 
@@ -316,6 +334,15 @@ screens.
 - Confirmed the development, production build, and preview scripts are
 	configured for their intended commands.
 - Validation: `npm run dev`, `npm run build`, and browser console checks passed.
+
+### Phase 14: README Documentation
+
+- Expanded the project overview to include all implemented page features.
+- Documented the current component structure, setup, scripts, and responsive
+	behavior.
+- Added Live Demo and Netlify deployment sections for the deployment phase.
+- Validation: documentation matches the current source structure and
+	`npm run build` succeeds.
 
 ### Future Phases
 
