@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 import Work from "./components/Work/Work";
+import Benefits from "./components/Benefits/Benefits";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
@@ -14,6 +15,7 @@ export default function App() {
         <Hero />
         <Services />
         <Work />
+        <Benefits />
         <Contact />
       </main>
       <Footer />

@@ -44,6 +44,7 @@ The project currently includes:
 		│   ├── Hero/
 		│   ├── Services/
 		│   ├── Work/
+		│   ├── Benefits/
 		│   ├── Contact/
 		│   └── Footer/
 		├── App.jsx         # Root component that composes the page
@@ -131,6 +132,15 @@ hover interaction:
 2. LocalBite — Food Discovery
 3. FitTrack — Wellness Product
 
+### Why Work With Us
+
+The About section at `#about` presents four reusable benefits:
+
+1. User-focused design
+2. Responsive development
+3. Clean reusable code
+4. Clear communication
+
 ### Contact
 
 The contact section closes the page with an inquiry message and an email call
@@ -196,6 +206,15 @@ single column. Section headings also scale down for smaller screens.
 - Added project names, categories, descriptions, and CSS design placeholders.
 - Added hover lift, border, shadow, and visual scale interactions.
 - Added a single-column project layout for smaller screens.
+- Validation: production build completed successfully with `npx vite build`.
+
+### Phase 5: Business Benefits
+
+- Added a reusable Benefits component with four data-driven feature items.
+- Added the "Why Work With Us" section with the message "Small team. Big
+	attention to detail."
+- Added responsive two-column and single-column layouts with subtle hover
+	interactions.
 - Validation: production build completed successfully with `npx vite build`.
 
 ### Future Phases
